@@ -1,7 +1,7 @@
 package transform
 
 import (
-	"github.com/hashicorp/hcl/v2"
+	"github.com/apio-project/hcl/v2"
 )
 
 // Shallow is equivalent to calling transformer.TransformBody(body), and

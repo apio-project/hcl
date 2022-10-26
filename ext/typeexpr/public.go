@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/apio-project/hcl/v2/hclsyntax"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/apio-project/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 )
 

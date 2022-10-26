@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/apio-project/hcl/v2/gohcl"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/hashicorp/hcl/v2/json"
+	"github.com/apio-project/hcl/v2"
+	"github.com/apio-project/hcl/v2/hclsyntax"
+	"github.com/apio-project/hcl/v2/json"
 	"github.com/zclconf/go-cty/cty"
 )
 

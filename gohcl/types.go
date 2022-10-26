@@ -3,7 +3,7 @@ package gohcl
 import (
 	"reflect"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/apio-project/hcl/v2"
 )
 
 var victimExpr hcl.Expression

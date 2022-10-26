@@ -3,7 +3,7 @@ package hclsyntax
 import (
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/apio-project/hcl/v2"
 )
 
 func TestValidIdentifier(t *testing.T) {

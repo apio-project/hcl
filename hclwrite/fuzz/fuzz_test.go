@@ -4,8 +4,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclwrite"
+	"github.com/apio-project/hcl/v2"
+	"github.com/apio-project/hcl/v2/hclwrite"
 )
 
 func FuzzParseConfig(f *testing.F) {

@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/apio-project/hcl/v2"
 )
 
 // ImpliedBodySchema produces a hcl.BodySchema derived from the type of the

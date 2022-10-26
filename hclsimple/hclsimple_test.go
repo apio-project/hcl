@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/hcl/v2/hclsimple"
+	"github.com/apio-project/hcl/v2/hclsimple"
 )
 
 func Example_nativeSyntax() {

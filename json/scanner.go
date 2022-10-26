@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/apparentlymart/go-textseg/v13/textseg"
-	"github.com/hashicorp/hcl/v2"
+	"github.com/apio-project/hcl/v2"
 )
 
 //go:generate stringer -type tokenType scanner.go

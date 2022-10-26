@@ -1,7 +1,7 @@
 package hclsyntax
 
 import (
-	"github.com/hashicorp/hcl/v2"
+	"github.com/apio-project/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 )
 

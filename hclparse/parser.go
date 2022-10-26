@@ -16,9 +16,9 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/hashicorp/hcl/v2/json"
+	"github.com/apio-project/hcl/v2"
+	"github.com/apio-project/hcl/v2/hclsyntax"
+	"github.com/apio-project/hcl/v2/json"
 )
 
 // NOTE: This is the public interface for parsing. The actual parsers are

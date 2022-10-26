@@ -7,8 +7,8 @@ import (
 
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclparse"
+	"github.com/apio-project/hcl/v2"
+	"github.com/apio-project/hcl/v2/hclparse"
 )
 
 func main() {
