@@ -99,7 +99,7 @@ func init() {
 			TokenAnd: OpLogicalAnd,
 		},
 		{
-			TokenEqualOp:  OpEqual,
+			TokenColonOp:  OpEqual,
 			TokenNotEqual: OpNotEqual,
 		},
 		{

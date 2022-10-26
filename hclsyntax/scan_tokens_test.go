@@ -2044,7 +2044,7 @@ EOF
 					},
 				},
 				{
-					Type:  TokenEqual,
+					Type:  TokenColon,
 					Bytes: []byte("="),
 					Range: hcl.Range{
 						Start: hcl.Pos{Byte: 3, Line: 2, Column: 3},
@@ -2472,7 +2472,7 @@ EOF
 					},
 				},
 				{
-					Type:  TokenEqual,
+					Type:  TokenColon,
 					Bytes: []byte(`=`),
 					Range: hcl.Range{
 						Start: hcl.Pos{Byte: 22, Line: 2, Column: 14},
@@ -2488,7 +2488,7 @@ EOF
 					},
 				},
 				{
-					Type:  TokenEqualOp,
+					Type:  TokenColonOp,
 					Bytes: []byte(`==`),
 					Range: hcl.Range{
 						Start: hcl.Pos{Byte: 37, Line: 2, Column: 29},

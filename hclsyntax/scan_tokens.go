@@ -4946,7 +4946,7 @@ func scanTokens(data []byte, filename string, start hcl.Pos, mode scanMode) []To
 //line scan_tokens.rl:283
 				te = p + 1
 				{
-					token(TokenEqualOp)
+					token(TokenColonOp)
 				}
 			case 59:
 //line scan_tokens.rl:284

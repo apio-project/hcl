@@ -121,7 +121,7 @@ func TokensForObject(attrs []ObjectAttrTokens) Tokens {
 	for _, attr := range attrs {
 		toks = append(toks, attr.Name...)
 		toks = append(toks, &Token{
-			Type:  hclsyntax.TokenEqual,
+			Type:  hclsyntax.TokenColon,
 			Bytes: []byte{'='},
 		})
 		toks = append(toks, attr.Value...)
@@ -278,7 +278,7 @@ func appendTokensForValue(val cty.Value, toks Tokens) Tokens {
 				toks = appendTokensForValue(eKey, toks)
 			}
 			toks = append(toks, &Token{
-				Type:  hclsyntax.TokenEqual,
+				Type:  hclsyntax.TokenColon,
 				Bytes: []byte{'='},
 			})
 			toks = appendTokensForValue(eVal, toks)

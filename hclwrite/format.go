@@ -280,7 +280,7 @@ func spaceAfterToken(subject, before, after *Token) bool {
 			// Minus at the start of input must be a negation
 			return false
 
-		case hclsyntax.TokenOParen, hclsyntax.TokenOBrace, hclsyntax.TokenOBrack, hclsyntax.TokenEqual, hclsyntax.TokenColon, hclsyntax.TokenComma, hclsyntax.TokenQuestion:
+		case hclsyntax.TokenOParen, hclsyntax.TokenOBrace, hclsyntax.TokenOBrack, hclsyntax.TokenColon, hclsyntax.TokenComma, hclsyntax.TokenQuestion:
 			// Minus immediately after an opening bracket or separator must be a negation.
 			return false
 
@@ -288,7 +288,7 @@ func spaceAfterToken(subject, before, after *Token) bool {
 			// Minus immediately after another arithmetic operator must be negation.
 			return false
 
-		case hclsyntax.TokenEqualOp, hclsyntax.TokenNotEqual, hclsyntax.TokenGreaterThan, hclsyntax.TokenGreaterThanEq, hclsyntax.TokenLessThan, hclsyntax.TokenLessThanEq:
+		case hclsyntax.TokenColonOp, hclsyntax.TokenNotEqual, hclsyntax.TokenGreaterThan, hclsyntax.TokenGreaterThanEq, hclsyntax.TokenLessThan, hclsyntax.TokenLessThanEq:
 			// Minus immediately after another comparison operator must be negation.
 			return false
 
@@ -402,7 +402,7 @@ func linesForFormat(tokens Tokens) []formatLine {
 		}
 
 		for i, tok := range line.lead {
-			if i > 0 && tok.Type == hclsyntax.TokenEqual {
+			if i > 0 && tok.Type == hclsyntax.TokenColon {
 				// We only move the tokens into "assign" if the RHS seems to
 				// be a whole expression, which we determine by counting
 				// brackets. If there's a net positive number of brackets

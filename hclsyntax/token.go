@@ -46,7 +46,7 @@ const (
 	TokenPercent TokenType = '%'
 
 	TokenEqual         TokenType = '='
-	TokenEqualOp       TokenType = '≔'
+	TokenColonOp       TokenType = '≔'
 	TokenNotEqual      TokenType = '≠'
 	TokenLessThan      TokenType = '<'
 	TokenLessThanEq    TokenType = '≤'

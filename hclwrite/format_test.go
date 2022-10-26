@@ -704,7 +704,7 @@ func TestLinesForFormat(t *testing.T) {
 		{
 			Tokens{
 				&Token{Type: hclsyntax.TokenIdent},
-				&Token{Type: hclsyntax.TokenEqual},
+				&Token{Type: hclsyntax.TokenColon},
 				&Token{Type: hclsyntax.TokenNumberLit},
 				&Token{Type: hclsyntax.TokenEOF},
 			},
@@ -714,7 +714,7 @@ func TestLinesForFormat(t *testing.T) {
 						&Token{Type: hclsyntax.TokenIdent},
 					},
 					assign: Tokens{
-						&Token{Type: hclsyntax.TokenEqual},
+						&Token{Type: hclsyntax.TokenColon},
 						&Token{Type: hclsyntax.TokenNumberLit},
 					},
 				},
@@ -723,7 +723,7 @@ func TestLinesForFormat(t *testing.T) {
 		{
 			Tokens{
 				&Token{Type: hclsyntax.TokenIdent},
-				&Token{Type: hclsyntax.TokenEqual},
+				&Token{Type: hclsyntax.TokenColon},
 				&Token{Type: hclsyntax.TokenNumberLit},
 				&Token{Type: hclsyntax.TokenComment, Bytes: []byte("#foo\n")},
 				&Token{Type: hclsyntax.TokenEOF},
@@ -734,7 +734,7 @@ func TestLinesForFormat(t *testing.T) {
 						&Token{Type: hclsyntax.TokenIdent},
 					},
 					assign: Tokens{
-						&Token{Type: hclsyntax.TokenEqual},
+						&Token{Type: hclsyntax.TokenColon},
 						&Token{Type: hclsyntax.TokenNumberLit},
 					},
 					comment: Tokens{

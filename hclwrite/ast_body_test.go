@@ -34,7 +34,7 @@ func TestBodyGetAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -60,7 +60,7 @@ func TestBodyGetAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -86,7 +86,7 @@ func TestBodyGetAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -112,7 +112,7 @@ func TestBodyGetAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -144,7 +144,7 @@ func TestBodyGetAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -170,7 +170,7 @@ func TestBodyGetAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -360,7 +360,7 @@ func TestBodySetAttributeValue(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -392,7 +392,7 @@ func TestBodySetAttributeValue(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -412,7 +412,7 @@ func TestBodySetAttributeValue(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -444,7 +444,7 @@ func TestBodySetAttributeValue(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -476,7 +476,7 @@ func TestBodySetAttributeValue(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -496,7 +496,7 @@ func TestBodySetAttributeValue(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -558,7 +558,7 @@ func TestBodySetAttributeTraversal(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -590,7 +590,7 @@ func TestBodySetAttributeTraversal(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -642,7 +642,7 @@ func TestBodySetAttributeTraversal(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -689,7 +689,7 @@ func TestBodySetAttributeTraversal(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -790,7 +790,7 @@ func TestBodySetAttributeRaw(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -828,7 +828,7 @@ func TestBodySetAttributeRaw(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -866,7 +866,7 @@ func TestBodySetAttributeRaw(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -886,7 +886,7 @@ func TestBodySetAttributeRaw(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -1060,7 +1060,7 @@ func TestBodyRemoveAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -1102,7 +1102,7 @@ func TestBodyRemoveAttribute(t *testing.T) {
 					SpacesBefore: 0,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte{'='},
 					SpacesBefore: 1,
 				},
@@ -1430,7 +1430,7 @@ bar {}
 			SpacesBefore: 0,
 		},
 		1: {
-			Type:         hclsyntax.TokenEqual,
+			Type:         hclsyntax.TokenColon,
 			Bytes:        []byte(`=`),
 			SpacesBefore: 1,
 		},
@@ -1470,7 +1470,7 @@ bar {}
 			SpacesBefore: 2,
 		},
 		9: {
-			Type:         hclsyntax.TokenEqual,
+			Type:         hclsyntax.TokenColon,
 			Bytes:        []byte(`=`),
 			SpacesBefore: 1,
 		},
@@ -1540,7 +1540,7 @@ bar {}
 			SpacesBefore: 0,
 		},
 		1: {
-			Type:         hclsyntax.TokenEqual,
+			Type:         hclsyntax.TokenColon,
 			Bytes:        []byte(`=`),
 			SpacesBefore: 1,
 		},

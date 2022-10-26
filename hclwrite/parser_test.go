@@ -1543,7 +1543,7 @@ foo "bar" "baz" {
 					SpacesBefore: 4,
 				},
 				{
-					Type:         hclsyntax.TokenEqual,
+					Type:         hclsyntax.TokenColon,
 					Bytes:        []byte(`=`),
 					SpacesBefore: 1,
 				},

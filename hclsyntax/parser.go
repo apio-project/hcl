@@ -152,7 +152,7 @@ func (p *parser) ParseBodyItem() (Node, hcl.Diagnostics) {
 	next := p.Peek()
 
 	switch next.Type {
-	case TokenEqual:
+	case TokenColon:
 		return p.finishParsingBodyAttribute(ident, false)
 	case TokenOQuote, TokenOBrace, TokenIdent:
 		return p.finishParsingBodyBlock(ident)
@@ -193,7 +193,7 @@ func (p *parser) parseSingleAttrBody(end TokenType) (*Body, hcl.Diagnostics) {
 	next := p.Peek()
 
 	switch next.Type {
-	case TokenEqual:
+	case TokenColon:
 		node, attrDiags := p.finishParsingBodyAttribute(ident, true)
 		diags = append(diags, attrDiags...)
 		attr = node.(*Attribute)
@@ -236,7 +236,7 @@ func (p *parser) parseSingleAttrBody(end TokenType) (*Body, hcl.Diagnostics) {
 
 func (p *parser) finishParsingBodyAttribute(ident Token, singleLine bool) (Node, hcl.Diagnostics) {
 	eqTok := p.Read() // eat equals token
-	if eqTok.Type != TokenEqual {
+	if eqTok.Type != TokenColon {
 		// should never happen if caller behaves
 		panic("finishParsingBodyAttribute called with next not equals")
 	}
@@ -326,7 +326,7 @@ Token:
 
 		default:
 			switch tok.Type {
-			case TokenEqual:
+			case TokenColon:
 				diags = append(diags, &hcl.Diagnostic{
 					Severity: hcl.DiagError,
 					Summary:  "Invalid block definition",
@@ -1394,7 +1394,7 @@ func (p *parser) parseObjectCons() (Expression, hcl.Diagnostics) {
 		}
 
 		next = p.Peek()
-		if next.Type != TokenEqual && next.Type != TokenColon {
+		if next.Type != TokenColon && next.Type != TokenColon {
 			if !p.recovery {
 				switch next.Type {
 				case TokenNewline, TokenComma:

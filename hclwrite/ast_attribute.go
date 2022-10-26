@@ -28,7 +28,7 @@ func (a *Attribute) init(name string, expr *Expression) {
 	a.name = a.children.Append(nameObj)
 	a.children.AppendUnstructuredTokens(Tokens{
 		{
-			Type:  hclsyntax.TokenEqual,
+			Type:  hclsyntax.TokenColon,
 			Bytes: []byte{'='},
 		},
 	})
