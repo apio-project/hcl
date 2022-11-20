@@ -1,2 +1,2 @@
 go test fuzz v1
-[]byte("a = \"bar\\nbaz\"\n")
+[]byte("a : \"bar\\nbaz\"\n")

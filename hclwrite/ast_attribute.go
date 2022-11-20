@@ -29,7 +29,7 @@ func (a *Attribute) init(name string, expr *Expression) {
 	a.children.AppendUnstructuredTokens(Tokens{
 		{
 			Type:  hclsyntax.TokenColon,
-			Bytes: []byte{'='},
+			Bytes: []byte{':'},
 		},
 	})
 	a.expr = a.children.Append(expr)

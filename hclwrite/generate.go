@@ -122,7 +122,7 @@ func TokensForObject(attrs []ObjectAttrTokens) Tokens {
 		toks = append(toks, attr.Name...)
 		toks = append(toks, &Token{
 			Type:  hclsyntax.TokenColon,
-			Bytes: []byte{'='},
+			Bytes: []byte{':'},
 		})
 		toks = append(toks, attr.Value...)
 		toks = append(toks, &Token{
@@ -279,7 +279,7 @@ func appendTokensForValue(val cty.Value, toks Tokens) Tokens {
 			}
 			toks = append(toks, &Token{
 				Type:  hclsyntax.TokenColon,
-				Bytes: []byte{'='},
+				Bytes: []byte{':'},
 			})
 			toks = appendTokensForValue(eVal, toks)
 			toks = append(toks, &Token{

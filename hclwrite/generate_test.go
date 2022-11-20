@@ -6,9 +6,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/apio-project/hcl/v2"
 	"github.com/apio-project/hcl/v2/hclsyntax"
+	"github.com/google/go-cmp/cmp"
 	"github.com/zclconf/go-cty/cty"
 )
 
@@ -629,7 +629,7 @@ func TestTokensForObject(t *testing.T) {
 				{Type: hclsyntax.TokenOBrace, Bytes: []byte{'{'}},
 				{Type: hclsyntax.TokenNewline, Bytes: []byte{'\n'}},
 				{Type: hclsyntax.TokenIdent, Bytes: []byte("bar"), SpacesBefore: 2},
-				{Type: hclsyntax.TokenColon, Bytes: []byte{'='}, SpacesBefore: 1},
+				{Type: hclsyntax.TokenColon, Bytes: []byte{':'}, SpacesBefore: 1},
 				{Type: hclsyntax.TokenOQuote, Bytes: []byte(`"`), SpacesBefore: 1},
 				{Type: hclsyntax.TokenQuotedLit, Bytes: []byte("baz")},
 				{Type: hclsyntax.TokenCQuote, Bytes: []byte(`"`)},
@@ -659,13 +659,13 @@ func TestTokensForObject(t *testing.T) {
 				{Type: hclsyntax.TokenOBrace, Bytes: []byte{'{'}},
 				{Type: hclsyntax.TokenNewline, Bytes: []byte{'\n'}},
 				{Type: hclsyntax.TokenIdent, Bytes: []byte("foo"), SpacesBefore: 2},
-				{Type: hclsyntax.TokenColon, Bytes: []byte{'='}, SpacesBefore: 1},
+				{Type: hclsyntax.TokenColon, Bytes: []byte{':'}, SpacesBefore: 1},
 				{Type: hclsyntax.TokenIdent, Bytes: []byte("root"), SpacesBefore: 1},
 				{Type: hclsyntax.TokenDot, Bytes: []byte(".")},
 				{Type: hclsyntax.TokenIdent, Bytes: []byte("attr")},
 				{Type: hclsyntax.TokenNewline, Bytes: []byte{'\n'}},
 				{Type: hclsyntax.TokenIdent, Bytes: []byte("bar"), SpacesBefore: 2},
-				{Type: hclsyntax.TokenColon, Bytes: []byte{'='}, SpacesBefore: 1},
+				{Type: hclsyntax.TokenColon, Bytes: []byte{':'}, SpacesBefore: 1},
 				{Type: hclsyntax.TokenOQuote, Bytes: []byte(`"`), SpacesBefore: 1},
 				{Type: hclsyntax.TokenQuotedLit, Bytes: []byte("baz")},
 				{Type: hclsyntax.TokenCQuote, Bytes: []byte(`"`)},

@@ -1,2 +1,2 @@
 go test fuzz v1
-[]byte("a = foo.bar.*\n")
+[]byte("a : foo.bar.*\n")
